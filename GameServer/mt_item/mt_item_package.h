@@ -53,7 +53,7 @@ namespace Mt
 		bool LuaAddToPlayer(MtPlayer* player);
 		std::map<int32, int32> LuaGenItems();
 		bool GenItems(std::map<int32, int32>& items);
-		//µôÂäÖÁ·ÖÅä±³°ü
+		//æ‰è½è‡³åˆ†é…èƒŒåŒ…
 		bool AddToPlayerArrange(MtPlayer* player );
 		//
 		bool AddToGuildSpoil(GuildInfo* guild, MtPlayer* player,int32 copyid);

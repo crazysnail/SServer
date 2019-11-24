@@ -305,26 +305,29 @@ namespace Mt {
 			ZXERO_ASSERT(false) << "load config file from coordinator not implemntd";
 		}
 		
-		bool ret = ServerActive();
-		if (ret)
-		{
-			LOG_INFO << "ServerActive True";
-			Server::Instance().ServerInit();
-		}
-		else
-		{
-			LOG_INFO << "ServerActive False";
-			EXIT();
-		}
-		ret = EnableActive(true);
-		if (!ret)
-		{
-			LOG_INFO << "EnableActive False";
-			if (!gm_mode_)
-			{
-				EXIT();
-			}
-		}
+		//??-----
+		// bool ret = ServerActive();
+		// if (ret)
+		// {
+		// 	LOG_INFO << "ServerActive True";
+		// 	Server::Instance().ServerInit();
+		// }
+		// else
+		// {
+		// 	LOG_INFO << "ServerActive False";
+		// 	EXIT();
+		// }
+		// ret = EnableActive(true);
+		// if (!ret)
+		// {
+		// 	LOG_INFO << "EnableActive False";
+		// 	if (!gm_mode_)
+		// 	{
+		// 		EXIT();
+		// 	}
+		// }
+		Server::Instance().ServerInit();
+
 		MtShmManager::Instance().ShmInit();
 
 		return 0;
