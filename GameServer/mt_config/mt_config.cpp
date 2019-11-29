@@ -305,7 +305,7 @@ namespace Mt {
 			ZXERO_ASSERT(false) << "load config file from coordinator not implemntd";
 		}
 		
-		//??-----
+		//seed todo
 		// bool ret = ServerActive();
 		// if (ret)
 		// {

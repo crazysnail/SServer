@@ -1,7 +1,7 @@
 #!/bin/sh
 #author san by 2016-5-11
 
-Version_Dir=/mnt/version/
+Version_Dir=../version/
 dirnm=$(dirname "$0")
 echo $dirnm
 filepath=$(cd "$(dirname "$0")"; pwd)
@@ -33,8 +33,8 @@ echo "cmake.."
 cmake ../temp
 cd ../temp
 echo "begin make.."
-make -j4 >../MtOnline/makeinfo.log
-cd ../MtOnline
+make -j4 >../makeinfo.log
+cd ../source
 if grep -q "100%] Built target GameServer" makeinfo.log;
 then
 	echo "make ok!"

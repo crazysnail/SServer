@@ -405,7 +405,7 @@ namespace zxero
 
 			if((fp = fopen(filename, "r")) == NULL) 
 			{ 
-				printf("have   no   such   file \n");
+				printf("have   no   such   file %s",filename);
 				return nullptr; 
 			}
 			while(!feof(fp)) 
